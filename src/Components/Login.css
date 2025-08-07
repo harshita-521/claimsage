@@ -1,0 +1,103 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    /* background-color: blue; */
+}
+
+.input_container {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.input_field {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+.bg_spline {
+    /* position: fixed; */
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+
+.input_field{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_field input {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #444;
+  color: white;
+  outline: none;
+}
+
+.input_field label {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.input_field button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #8847b8;
+  background: linear-gradient(135deg, #2a064f, #8847b8, #2a064f);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.input_field button:hover {
+  background-color: #74429b;
+}
+
+.input_container h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.input_container p{
+    font-style: italic;
+    font-size: 10px;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-weight: bold;
+}
