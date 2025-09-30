@@ -9,7 +9,7 @@ function Header() {
     return (
         <div className="header">
             <div className="logo"><img src={logo11} alt="logo" /></div>
-            <div className='bot_name'>CLAIMSAGE</div>
+            <div className='bot_name'>FUSION</div>
            
         </div>
     )

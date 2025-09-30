@@ -10,7 +10,7 @@ function Landing() {
         <div className="entry2">Ask.</div>
         <div className="entry3">Understand</div>
         </div>
-      <div className="text_landing">Got Questions? Your Policies Have Answers (We’ll Find Them)</div>
+      <div className="text_landing">Got Questions? Your Files Have Answers (We’ll Find Them)</div>
        <div className="auth">
                 <button>
                 <NavLink

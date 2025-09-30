@@ -152,7 +152,7 @@ function Chat() {
       <div className="modal-overlay">
         <div className="modal-content">
           <div className="modal-header">
-            <h3>Policy List</h3>
+            <h3>Uploaded Files</h3>
 
             <button onClick={onClose} className="close-btn">×</button>
           </div>
@@ -547,14 +547,14 @@ function Chat() {
 
       <div className={`sideBar ${sidebarOpen ? 'sidebar-open' : 'sidebar-close'}`}>
         <h2>
-          Policy List
+          Uploaded Files
         </h2>
         <div className="sidebar-content">
 
           {
             policyList.length === 0 ? (
               <div>
-                <p className="no-files">No Policies uploaded yet</p>
+                <p className="no-files">No files uploaded yet</p>
                 <div className='add-new-btn'
                   onClick={() => {
                     setDisplay(true);
@@ -596,7 +596,7 @@ function Chat() {
                 {/* Add your component content here */}
                 {
                   <div>
-                    <input className='policy-input' type="text" placeholder="Enter policy name"
+                    <input className='policy-input' type="text" placeholder="Enter file name"
                       value={uploadPolicy.name}
                       onChange={(e) => setUploadPolicy({ name: e.target.value })}
                     />
@@ -604,7 +604,7 @@ function Chat() {
                     <button
                       className="add-policy-button"
                       onClick={handleAddPolicy}
-                    > Add Policy </button>
+                    > Add File </button>
                   </div>
                 }
               </div>
